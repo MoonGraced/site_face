@@ -2,10 +2,17 @@
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
+  import githubLogo from '/github-mark.svg'
 </script>
 
 <main>
+  <h1>
+    Привет! Это мой сайт!
+  </h1>
   <div>
+    <a href="https://github.com/MoonGraced" target="_blank" rel="noreferrer">
+      <img src={githubLogo} class="logo github" alt="GitHub Logo" />
+    </a>
     <a href="https://vite.dev" target="_blank" rel="noreferrer">
       <img src={viteLogo} class="logo" alt="Vite Logo" />
     </a>
@@ -36,10 +43,13 @@
     transition: filter 300ms;
   }
   .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 3em #646cffaa);
   }
   .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
+    filter: drop-shadow(0 0 3em #ff3e00aa);
+  }
+  .logo.github:hover {
+    filter: drop-shadow(0 0 3em #000000aa);
   }
   .read-the-docs {
     color: #888;
